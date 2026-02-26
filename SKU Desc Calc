@@ -1,0 +1,57 @@
+Lawmatics Premium Subscription with 3 users
+
+Invoicing Cadence:
+
+Month 1 Invoice: Should this be only Non-Recurring Up front?
+{{deal.skus.PremiumOnboarding.salesPrice}} 
+
+
+❓ How should M1 be reflected in Invoicing? 
+1. Full Non-Recurring SKU fully invoiced up front?
+2. 1 Month of non-recur SKU invoiced?
+3. 1 Mo free of non-recurring SKU too? 
+
+${{addCommas (toFixed (add 
+  (divide (multiply deal.skus.[Premium-Monthly].annualPrice 11) 12)
+  deal.skus.[1KMMSBlock-Monthly].salesPrice
+) 2)}}
+
+💡 What This Does
+
+1. multiply annualPrice 11
+
+2. divide by 12
+
+3. add monthly add-on salesPrice
+
+4. toFixed 2
+
+5. addCommas
+
+6. prepend $
+
+Month 2: ${{addCommas (toFixed (add 
+  deal.skus.[Premium-Monthly].salesPrice
+  deal.skus.[1KMMSBlock-Monthly].salesPrice
+) 2)}}
+
+➡️ 👆🏼 will combine Premium Monthly + "1KMMSBM" recurring monthly SKUs correctly.
+
+Month 3: ${{addCommas (toFixed (add 
+  deal.skus.[Premium-Monthly].salesPrice
+  deal.skus.[1KMMSBlock-Monthly].salesPrice
+) 2)}}
+
+Month 4: ${{addCommas (toFixed (add 
+  deal.skus.[Premium-Monthly].salesPrice
+  deal.skus.[1KMMSBlock-Monthly].salesPrice
+) 2)}}
+
+	
+| Month | | Invoice Amount |
+| ---- | ---- | ---- | 
+| Month 1 |  | $2,000.00 |
+| Month 2 |  | ${{addCommas (toFixed (add 
+  deal.skus.[Premium-Monthly].salesPrice
+  deal.skus.[1KMMSBlock-Monthly].salesPrice
+) 2)}} |
