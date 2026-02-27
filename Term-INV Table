@@ -16,107 +16,113 @@
   <tbody>
     <tr>
       <td><strong>Month 1:</strong></td>
-      <td>January</td>
+      <td>{{moment deal.terms.ContractPeriod.value format="MM/DD/YYYY"}}</td>
       <td></td>
-      <td>Calc Here</td>
+      <td>${{addCommas (toFixed (add
+  (add
+    deal.skus.[Premium-Monthly].monthlyPrice
+    deal.skus.[SMSTier2-Annual].monthlyPrice
+  )
+  deal.skus.[PremiumOnboarding].netPrice
+) 2)}} </td>
     </tr> 
     <tr> 
       <td><strong>Month 2:</strong></td>
-      <td>February</td>
+      <td>{{moment deal.terms.ContractPeriod.value add="months" amount="1" format="MM/DD/YYYY"}}</td>
       <td></td>
       <td>${{addCommas (toFixed (add 
-  deal.skus.[Premium-Monthly].salesPrice
-  deal.skus.[1KMMSBlock-Monthly].salesPrice
+  deal.skus.[Premium-Monthly].monthlyPrice
+  deal.skus.[SMSTier2-Annual].monthlyPrice
 ) 2)}}</td>
     </tr>
     <tr>
       <td><strong>Month 3:</strong></td>
-      <td>March</td>
+      <td>{{moment deal.terms.ContractPeriod.value add="months" amount="2" format="MM/DD/YYYY"}}</td>
       <td></td>
       <td>${{addCommas (toFixed (add 
-  deal.skus.[Premium-Monthly].salesPrice
-  deal.skus.[1KMMSBlock-Monthly].salesPrice
+  deal.skus.[Premium-Monthly].monthlyPrice
+  deal.skus.[SMSTier2-Annual].monthlyPrice
 ) 2)}}</td>
     </tr>
     <tr>
       <td><strong>Month 4:</strong></td>
-      <td>April</td>
+      <td>{{moment deal.terms.ContractPeriod.value add="months" amount="3" format="MM/DD/YYYY"}}</td>
       <td></td>
       <td>${{addCommas (toFixed (add 
-  deal.skus.[Premium-Monthly].salesPrice
-  deal.skus.[1KMMSBlock-Monthly].salesPrice
+  deal.skus.[Premium-Monthly].monthlyPrice
+  deal.skus.[SMSTier2-Annual].monthlyPrice
 ) 2)}}</td>
     </tr>
     <tr>
       <td><strong>Month 5:</strong></td>
-      <td>May</td>
+      <td>{{moment deal.terms.ContractPeriod.value add="months" amount="4" format="MM/DD/YYYY"}}</td>
       <td></td>
       <td>${{addCommas (toFixed (add 
-  deal.skus.[Premium-Monthly].salesPrice
-  deal.skus.[1KMMSBlock-Monthly].salesPrice
+  deal.skus.[Premium-Monthly].monthlyPrice
+  deal.skus.[SMSTier2-Annual].monthlyPrice
 ) 2)}}</td>
     </tr>
     <tr>
       <td><strong>Month 6:</strong></td>
-      <td>June</td>
+      <td>{{moment deal.terms.ContractPeriod.value add="months" amount="5" format="MM/DD/YYYY"}}</td>
       <td></td>
       <td>${{addCommas (toFixed (add 
-  deal.skus.[Premium-Monthly].salesPrice
-  deal.skus.[1KMMSBlock-Monthly].salesPrice
+  deal.skus.[Premium-Monthly].monthlyPrice
+  deal.skus.[SMSTier2-Annual].monthlyPrice
 ) 2)}}</td>
     </tr>
     <tr>
       <td><strong>Month 7:</strong></td>
-      <td>July</td>
+      <td>{{moment deal.terms.ContractPeriod.value add="months" amount="6" format="MM/DD/YYYY"}}</td>
       <td></td>
       <td>${{addCommas (toFixed (add 
-  deal.skus.[Premium-Monthly].salesPrice
-  deal.skus.[1KMMSBlock-Monthly].salesPrice
+  deal.skus.[Premium-Monthly].monthlyPrice
+  deal.skus.[SMSTier2-Annual].monthlyPrice
 ) 2)}}</td>
     </tr>
     <tr>
       <td><strong>Month 8:</strong></td>
-      <td>August</td>
+      <td>{{moment deal.terms.ContractPeriod.value add="months" amount="7" format="MM/DD/YYYY"}}</td>
       <td></td>
       <td>${{addCommas (toFixed (add 
-  deal.skus.[Premium-Monthly].salesPrice
-  deal.skus.[1KMMSBlock-Monthly].salesPrice
+  deal.skus.[Premium-Monthly].monthlyPrice
+  deal.skus.[SMSTier2-Annual].monthlyPrice
 ) 2)}}</td>
     </tr>
     <tr>
       <td><strong>Month 9:</strong></td>
-      <td>September</td>
+      <td>{{moment deal.terms.ContractPeriod.value add="months" amount="8" format="MM/DD/YYYY"}}</td>
       <td></td>
       <td>${{addCommas (toFixed (add 
-  deal.skus.[Premium-Monthly].salesPrice
-  deal.skus.[1KMMSBlock-Monthly].salesPrice
+  deal.skus.[Premium-Monthly].monthlyPrice
+  deal.skus.[SMSTier2-Annual].monthlyPrice
 ) 2)}}</td>
     </tr>
     <tr>
       <td><strong>Month 10:</strong></td>
-      <td>October</td>
+      <td>{{moment deal.terms.ContractPeriod.value add="months" amount="9" format="MM/DD/YYYY"}}</td>
       <td></td>
       <td>${{addCommas (toFixed (add 
-  deal.skus.[Premium-Monthly].salesPrice
-  deal.skus.[1KMMSBlock-Monthly].salesPrice
+  deal.skus.[Premium-Monthly].monthlyPrice
+  deal.skus.[SMSTier2-Annual].monthlyPrice
 ) 2)}}</td>
     </tr>
     <tr>
       <td><strong>Month 11:</strong></td>
-      <td>November</td>
+      <td>{{moment deal.terms.ContractPeriod.value add="months" amount="10" format="MM/DD/YYYY"}}</td>
       <td></td>
       <td>${{addCommas (toFixed (add 
-  deal.skus.[Premium-Monthly].salesPrice
-  deal.skus.[1KMMSBlock-Monthly].salesPrice
+  deal.skus.[Premium-Monthly].monthlyPrice
+  deal.skus.[SMSTier2-Annual].monthlyPrice
 ) 2)}}</td>
     </tr>
     <tr>
       <td><strong>Month 12:</strong></td>
-      <td>December</td>
+      <td>{{moment deal.terms.ContractPeriod.value add="months" amount="11" format="MM/DD/YYYY"}}</td>
       <td></td>
       <td>${{addCommas (toFixed (add 
-  deal.skus.[Premium-Monthly].salesPrice
-  deal.skus.[1KMMSBlock-Monthly].salesPrice
+  deal.skus.[Premium-Monthly].monthlyPrice
+  deal.skus.[SMSTier2-Annual].monthlyPrice
 ) 2)}}</td>
     </tr>
   </tbody>
