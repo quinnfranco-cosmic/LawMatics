@@ -1,0 +1,170 @@
+<table style="width:100%; border-collapse:collapse; table-layout:fixed;">
+  <colgroup>
+    <col style="width:18%;" />
+    <col style="width:32%;" />
+    <col style="width:18%;" />
+    <col style="width:32%;" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th></th>
+      <th style="text-align:left;">Invoice Cadence </th>
+      <th></th>
+      <th style="text-align:left;">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Month 1:</strong></td>
+      <td>{{moment deal.terms.ContractActivates.value format="MM/DD/YYYY"}}</td>
+      <td></td>
+      <td>${{addCommas (toFixed (multiply
+  (divide
+    (add
+      deal.skus.Premium-Monthly.annualPrice 
+      deal.skus.PremiumAdditionalUser-Monthly.annualPrice
+    )
+    12
+  )
+  0.5
+) 2)}} </td>
+    </tr> 
+    <tr> 
+      <td><strong>Month 2:</strong></td>
+      <td>{{moment deal.terms.ContractActivates.value add="months" amount="1" format="MM/DD/YYYY"}}</td>
+      <td></td>
+      <td>${{addCommas (toFixed
+  (divide
+    (add
+      deal.skus.Premium-Monthly.annualPrice 
+      deal.skus.PremiumAdditionalUser-Monthly.annualPrice
+    )
+    12) 2)}}
+    </td>
+    </tr>
+    <tr>
+      <td><strong>Month 3:</strong></td>
+      <td>{{moment deal.terms.ContractActivates.value add="months" amount="2" format="MM/DD/YYYY"}}</td>
+      <td></td>
+      <td>${{addCommas (toFixed
+  (divide
+    (add
+      deal.skus.Premium-Monthly.annualPrice 
+      deal.skus.PremiumAdditionalUser-Monthly.annualPrice
+    )
+    12) 2)}}</td>
+    </tr>
+    <tr>
+      <td><strong>Month 4:</strong></td>
+      <td>{{moment deal.terms.ContractActivates.value add="months" amount="3" format="MM/DD/YYYY"}}</td>
+      <td></td>
+      <td>${{addCommas (toFixed
+  (divide
+    (add
+      deal.skus.Premium-Monthly.annualPrice 
+      deal.skus.PremiumAdditionalUser-Monthly.annualPrice
+    )
+    12) 2)}}</td>
+    </tr>
+    <tr>
+      <td><strong>Month 5:</strong></td>
+      <td>{{moment deal.terms.ContractActivates.value add="months" amount="4" format="MM/DD/YYYY"}}</td>
+      <td></td>
+      <td>${{addCommas (toFixed
+  (divide
+    (add
+      deal.skus.Premium-Monthly.annualPrice 
+      deal.skus.PremiumAdditionalUser-Monthly.annualPrice
+    )
+    12) 2)}}</td>
+    </tr>
+    <tr>
+      <td><strong>Month 6:</strong></td>
+      <td>{{moment deal.terms.ContractActivates.value add="months" amount="5" format="MM/DD/YYYY"}}</td>
+      <td></td>
+      <td>${{addCommas (toFixed
+  (divide
+    (add
+      deal.skus.Premium-Monthly.annualPrice 
+      deal.skus.PremiumAdditionalUser-Monthly.annualPrice
+    )
+    12) 2)}}</td>
+    </tr>
+    <tr>
+      <td><strong>Month 7:</strong></td>
+      <td>{{moment deal.terms.ContractActivates.value add="months" amount="6" format="MM/DD/YYYY"}}</td>
+      <td></td>
+      <td>${{addCommas (toFixed
+  (divide
+    (add
+      deal.skus.Premium-Monthly.annualPrice 
+      deal.skus.PremiumAdditionalUser-Monthly.annualPrice
+    )
+    12) 2)}}</td>
+    </tr>
+    <tr>
+      <td><strong>Month 8:</strong></td>
+      <td>{{moment deal.terms.ContractActivates.value add="months" amount="7" format="MM/DD/YYYY"}}</td>
+      <td></td>
+      <td>${{addCommas (toFixed
+  (divide
+    (add
+      deal.skus.Premium-Monthly.annualPrice 
+      deal.skus.PremiumAdditionalUser-Monthly.annualPrice
+    )
+    12) 2)}}</td>
+    </tr>
+    <tr>
+      <td><strong>Month 9:</strong></td>
+      <td>{{moment deal.terms.ContractActivates.value add="months" amount="8" format="MM/DD/YYYY"}}</td>
+      <td></td>
+      <td>${{addCommas (toFixed
+  (divide
+    (add
+      deal.skus.Premium-Monthly.annualPrice 
+      deal.skus.PremiumAdditionalUser-Monthly.annualPrice
+    )
+    12) 2)}}</td>
+    </tr>
+    <tr>
+      <td><strong>Month 10:</strong></td>
+      <td>{{moment deal.terms.ContractActivates.value add="months" amount="9" format="MM/DD/YYYY"}}</td>
+      <td></td>
+      <td>${{addCommas (toFixed
+  (divide
+    (add
+      deal.skus.Premium-Monthly.annualPrice 
+      deal.skus.PremiumAdditionalUser-Monthly.annualPrice
+    )
+    12) 2)}}</td>
+    </tr>
+    <tr>
+      <td><strong>Month 11:</strong></td>
+      <td>{{moment deal.terms.ContractActivates.value add="months" amount="10" format="MM/DD/YYYY"}}</td>
+      <td></td>
+      <td>${{addCommas (toFixed
+  (divide
+    (add
+      deal.skus.Premium-Monthly.annualPrice 
+      deal.skus.PremiumAdditionalUser-Monthly.annualPrice
+    )
+    12) 2)}}</td>
+    </tr>
+    <tr>
+      <td><strong>Month 12:</strong></td>
+      <td>{{moment deal.terms.ContractActivates.value add="months" amount="11" format="MM/DD/YYYY"}}</td>
+      <td></td>
+      <td>${{addCommas (toFixed
+  (divide
+    (add
+      deal.skus.Premium-Monthly.annualPrice 
+      deal.skus.PremiumAdditionalUser-Monthly.annualPrice
+    )
+    12) 2)}}</td>
+    </tr>
+  </tbody>
+</table>
+
+**Initial Billing Configuration and Adjustments.**
+
+The invoice schedule and fees outlined in this Agreement are based on the subscription configuration as of the Effective Date. Customer understands and agrees that any mid-term changes to the Subscription, including but not limited to the addition of modules, SKUs, users, or other components, may modify the total fees and corresponding invoice schedule. Upon such modification, remaining unpaid invoices shall be recalculated to reflect the updated Subscription configuration, and the prior invoice schedule shall no longer apply.
