@@ -55,3 +55,18 @@ Month 4: ${{addCommas (toFixed (add
   deal.skus.[Premium-Monthly].salesPrice
   deal.skus.[1KMMSBlock-Monthly].salesPrice
 ) 2)}} |
+
+>> BLOCK >> Next Version v2
+
+Lawmatics Premium Subscription with 3 users
+
+**LawMatics will waive the first month's subscription Fee as outlined in the Invoice Schedule Table below.**
+
+Total Premium ${{addCommas (toFixed deal.skus.Premium-Monthly.annualPrice 2)}}
+
+<div style="text-align:right;">
+  <strong>Subscription Total Price</strong><br>
+  <h5 style="color:black">
+${{addCommas (toFixed (divide (multiply deal.skus.[Premium-Monthly].annualPrice 11) 12) 2)}}
+  </h5>
+</div>
